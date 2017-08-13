@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
@@ -22,7 +22,7 @@ class HeaderBar extends Component {
   render() {
     return (
       <Toolbar>
-        <ToolbarGroup firstChild={true}>
+        <ToolbarGroup firstChild>
           <DropDownMenu value={this.state.value} onChange={this.handleChange}>
             <MenuItem value={1} primaryText="All Broadcasts" />
             <MenuItem value={2} primaryText="All Voice" />
@@ -37,10 +37,10 @@ class HeaderBar extends Component {
           <ToolbarTitle text="Options" />
           <FontIcon className="muidocs-icon-custom-sort" />
           <ToolbarSeparator />
-          <RaisedButton label="Create Broadcast" primary={true} />
+          <RaisedButton label="Create Broadcast" primary />
           <IconMenu
             iconButtonElement={
-              <IconButton touch={true}>
+              <IconButton touch>
                 <NavigationExpandMoreIcon />
               </IconButton>
             }
@@ -50,7 +50,7 @@ class HeaderBar extends Component {
           </IconMenu>
         </ToolbarGroup>
       </Toolbar>
-    )
+    );
   }
 }
 
