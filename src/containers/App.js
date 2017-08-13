@@ -26,7 +26,7 @@ const App = () => (
 
   <MuiThemeProvider>
     <Main/>
-    </MuiThemeProvider>
+  </MuiThemeProvider>
 )
 
 
